@@ -33,7 +33,6 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(String.format("create table %s (ID INTEGER PRIMARY KEY AUTOINCREMENT,%s TEXT,%s TEXT,%s TEXT,%s INTEGER)",TABLA_NOMBRE,COL_2,COL_3,COL_4,COL_5));
-        Log.i("--------------------------------------------------------> Base de datos:"+DB_NOMBRE, "DB CREADA");
 
 
     }
@@ -73,7 +72,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
         // TODO Auto-generated method stub
         String[] columns = new String[]{COL_1,COL_2,COL_3,COL_4,COL_5};
-        Cursor c = db.query(TABLA_NOMBRE, columns, COL_1 + "="+ id, null, null, null, null);// change this line in this method
+        Cursor c = db.query(TABLA_NOMBRE, columns, COL_1 + "="+ id, null, null, null, null);
         if(c!=null)
         {
             return c;
