@@ -45,7 +45,7 @@ public class MainActivityGZ extends AppCompatActivity {
                     txtANIO.setText("");
                     txtRECINTO.setText("");
                 } else {
-                    Toast.makeText(MainActivityGZ.this, "OOOhhh ocurrio algo malo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityGZ.this, "No se pudo guardar", Toast.LENGTH_SHORT).show();
 
                 }
             }
