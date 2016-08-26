@@ -94,7 +94,7 @@ public class MainActivityGZ extends AppCompatActivity {
                 if(registrosEliminados > 0 ){
                     Toast.makeText(MainActivityGZ.this,"Registro(s) Eliminado(s)",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(MainActivityGZ.this,"OOOhhh ocurrio algo malo no se elimino",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityGZ.this,"No se ha podido eliminar",Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -113,7 +113,7 @@ public class MainActivityGZ extends AppCompatActivity {
                 if (Actualizador == true){
                     Toast.makeText(MainActivityGZ.this,"Actualizado",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(MainActivityGZ.this,"OOOhhh ocurrio algo malo no se Actualizo",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityGZ.this,"No se ha podido actualizar",Toast.LENGTH_SHORT).show();
                 }
             }
         });
