@@ -57,7 +57,7 @@ public class MainActivityGZ extends AppCompatActivity {
 
                 Cursor res = dbhelperSqlite.MostarTodos();
                 if (res.getCount() == 0) {
-                    Toast.makeText(MainActivityGZ.this, "OOOhhh ocurrio algo malo", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivityGZ.this, "No se pudo mostrar datos", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -71,7 +71,7 @@ public class MainActivityGZ extends AppCompatActivity {
                     buffer.append("Año nacimiento : " + res.getInt(4) + "\n\n");
                 }
 
-                Toast.makeText(MainActivityGZ.this, "XD", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivityGZ.this, " ", Toast.LENGTH_SHORT).show();
                 mostrarMensaje("Registros", buffer.toString());
 
             }
