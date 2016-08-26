@@ -1,5 +1,6 @@
 package com.facci.votantesgz;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -23,11 +24,12 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COL_5 = "ANO_NACIMIENTO";
 
     public DBHelper(Context context) {
-        super(context, name, factory, version);
+        super(context,DB_NOMBRE,null,1);
+        SQLiteDatabase db=this.getWritableDatabase();
     }
 
 
-
+    @SuppressLint("LongLogTag")
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(String.format("create table %s (ID INTEGER PRIMARY KEY AUTOINCREMENT,%s TEXT,%s TEXT,%s TEXT,%s INTEGER)",TABLA_NOMBRE,COL_2,COL_3,COL_4,COL_5));
